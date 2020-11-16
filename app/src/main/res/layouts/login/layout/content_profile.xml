@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".profile"
+    tools:showIn="@layout/activity_profile">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/android_info_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/accountinfo"
+                android:layout_width="208dp"
+                android:layout_height="36dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="171dp"
+                android:text="Account Info"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/accountinfo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_user_24dp" />
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/accountinfo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:text="Name"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/fullName"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/divider"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_address_24dp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/divider"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView4"
+                android:text="Address"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/divider3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_call_black_24dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/divider3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView5"
+                android:text="Phone"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/phone"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/divider4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_company_24dp" />
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/divider4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView8"
+                android:text="Company Name"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/companyName"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/divider5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_joined_time_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/joinedAt"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/divider5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView8"
+                android:text="Joined At"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/joinedAt"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+            <TextView
+                android:id="@+id/securityinfo"
+                android:layout_width="208dp"
+                android:layout_height="36dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/divider6"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="171dp"
+                android:text="Security"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/securityinfo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_account_box_black_24dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/securityinfo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView9"
+                android:text="User Name"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/divider7"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_password_24dp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/divider7"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView10"
+                android:text="Password"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/password"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/divider8"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="188dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/divider8"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView11"
+                android:text="Email"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="16dp"
+                android:background="@color/quantum_bluegrey100" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/divider9"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/ic_security_24dp" />
+
+            <TextView
+                android:id="@+id/securityQuestions"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/divider9"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/imageView11"
+                android:text="Security Questions"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.v4.widget.NestedScrollView>

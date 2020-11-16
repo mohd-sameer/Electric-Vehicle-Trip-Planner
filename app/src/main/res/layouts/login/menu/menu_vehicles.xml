@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.seccharge.Vehicles">
+
+    <item android:id="@+id/add_vehicle"
+        android:title="@string/add_vehicle" />
+
+
+</menu>

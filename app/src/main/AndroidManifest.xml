@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.seccharge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Reservation_booking"></activity>
+        <activity android:name=".Main2Activity" />
+
+
+        <activity
+            android:name=".SubmitCreditCardActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".ProfileEdit"
+            android:label="@string/title_activity_profile_edit"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+
+        <activity
+            android:name=".Vehicles"
+            android:label="@string/title_activity_vehicles"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".navigation_drawer"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Intro.IntroActivity" />
+        <activity
+            android:name=".Dashboard.Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Signup.Signup"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Payment" />
+
+        <activity
+            android:name=".Signup.Forgot_Password"
+            android:label="title_activity_forgot__password"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="Keep your api key here" />
+    </application>
+
+</manifest>

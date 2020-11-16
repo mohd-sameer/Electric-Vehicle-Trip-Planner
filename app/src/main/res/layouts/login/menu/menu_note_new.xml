@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:enabled="true"
+        android:title="share"
+        android:id="@+id/action_main_note_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="0"
+        app:showAsAction="always" />
+
+    <item android:enabled="true"
+        android:title="upload"
+        android:id="@+id/action_main_note_upload"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:orderInCategory="0"
+        app:showAsAction="always" />
+
+    <item android:enabled="true"
+        android:title="save"
+        android:id="@+id/action_main_note_save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="0"
+        app:showAsAction="always" />
+
+    <item android:enabled="true"
+        android:title="delete"
+        android:id="@+id/action_main_note_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="0"
+        app:showAsAction="always" />
+
+</menu>

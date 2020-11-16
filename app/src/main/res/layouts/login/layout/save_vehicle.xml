@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/android_info_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/vehicleinfo"
+                    android:layout_width="244dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="135dp"
+                    android:text="Update Vehicle Info"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/vehicleinfo"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:src="@drawable/ic_car_black_24dp" />
+
+                <TextView
+                    android:id="@+id/vehicleVin"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/vehicleinfo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:text="Information"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/vehicleVin"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/quantum_bluegrey100" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/divider"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:src="@drawable/ic_plate_black_24dp" />
+
+                <TextView
+                    android:id="@+id/plateNumber"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/divider"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:text="Plate Number"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/plateNumber"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/quantum_bluegrey100" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/divider3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:src="@drawable/ic_make_black_24dp" />
+
+                <TextView
+                    android:id="@+id/make"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/divider3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:text="Make"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/make"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/quantum_bluegrey100" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/divider4"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:src="@drawable/ic_model_number_black_24dp" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/divider4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:text="Model"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/model"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/quantum_bluegrey100" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/divider5"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:src="@drawable/ic_calender_range_black_24dp" />
+
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/divider5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:text="Year"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/year"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/quantum_bluegrey100" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/divider7"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:src="@drawable/ic_type_black_24dp" />
+
+                <TextView
+                    android:id="@+id/vehicleType"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/divider7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:text=" vehicleType"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/vehicleType"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/quantum_bluegrey100" />
+
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/divider8"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="31dp"
+                    android:src="@drawable/ic_color_black_24dp" />
+
+                <TextView
+                    android:id="@+id/vehicleColor"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/divider8"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toEndOf="@+id/imageView11"
+                    android:text="Color"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/divider9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/vehicleColor"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/quantum_bluegrey100" />
+
+
+                <CheckBox
+                    android:id="@+id/primaryVehicle"
+                    android:layout_width="254dp"
+                    android:layout_height="47dp"
+                    android:layout_below="@+id/divider9"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="107dp"
+                    android:text="Primary Vehicle"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+</LinearLayout>
